@@ -23,9 +23,14 @@ header img{
 	float:left;
 }
 
+header nav li{
+	width: 16%;
+	vertical-align:middle;
+}
+
 header nav a{
-	font-size:22px;	
-	color: #ffffff;
+	font-size:160%;	
+	color: #ffffff
 }
 
 header nav a:hover{
@@ -58,7 +63,7 @@ header nav{
 	border-radius: 20px;
 }
 
-#logo-face, #logo-twitter, #logo-correo{
+#logo-face, #logo-correo{
 	width: 100%; 
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -215,25 +220,27 @@ header nav{
 	font-size:45px;
 }
 
+input{
+	color: #000;
+}
+
 .formulario{
 	text-align:left;
 	font-weight: bold;
 }
 
-.formulario input, .formulario textarea{
+form input, form textarea{
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
 	color:#7e7f7f;
-	width:50%;
 	padding:0px 7px;
 	font-size:15px;
 	display:inline-block;
 }
 
-#contenido .formulario p{
+#contenido form p{
 	text-align:right;
-	width:30%;
 	display:inline-block;
 	vertical-align:top;
 }
@@ -332,17 +339,18 @@ footer .f_section{
 	display:inline-block;
 }
 
-#acercaDeNos, #nuestrasAcc, #contac, #Contenido_event, #inter{
+#acercaDeNos, #cont_area, #Contenido_event{
 	background-color: #FFFFFF;
 	border-radius: 15px;
 }
 
-#nuestrasAcc .col-sm-3, #inter .col-sm-3{
+#cont_area .col-sm-3{
 	background-color: #E3F4FB;
 	border-radius: 15px;
 	padding-bottom: 2%;
 }
-#contenido #acercaDeNos h2, #nuestrasAcc h2, #inter h2, #contac h2{
+
+#contenido #acercaDeNos h2, #cont_area h2{
 	color: #98C93C;
 	margin:0px;
 	text-align: center;
@@ -481,6 +489,21 @@ footer .f_section{
 	text-transform: capitalize;
 }
 
+@media (max-width:1050px){
+	header nav a{
+		font-size:125%;	
+		padding: 0px !important;
+	}
+
+	#logo-face, #logo-correo{
+		width: 150%; 
+		margin-left:-15px;
+	}
+
+	#contenido p{
+		padding: 3px 5px;
+	}
+}
 @media (min-width:851px){
 	header .btn-group, header button, header #boton{
 		visibility:hidden;
@@ -550,6 +573,10 @@ footer .f_section{
 		margin-bottom:5px;
 	}
 
+	#contenido p{
+		font-size: 13px !important;
+	}
+
 	#enlaces .subTema{
 		padding: 5px 5px;
 	}
@@ -558,8 +585,19 @@ footer .f_section{
 		margin:0px 0px 5px 0px;
 	}
 
-	.img_section h3, footer .f_section h3{
+	.img_section{
+		padding: 10px 0;
+	}
+
+	.img_section h3{
+		padding: 5px 5px;		
+	}
+
+	footer .f_section h3{
 		padding-top: 10px;
+	}
+
+	.img_section h3, footer .f_section h3{
 		padding-bottom: 10px;
 		margin:5px;
 		font-size:13px;
@@ -569,7 +607,7 @@ footer .f_section{
 		vertical-align:top;
 	}
 
-	.img_enlace, footer .f_section{
+	footer .f_section{
 		width:31%;
 		margin:0% 0.5%;
 	}
@@ -592,11 +630,96 @@ footer .f_section{
 		width:22%;
 	}
 
+	.menujq a{
+		font-size: 13px;
+	}
+
+	#texto{
+		font-size: 15px;
+	}
+
+	#texto .alignnone{
+		width: 120px;
+		height: 120px;
+	}
+
+	#texto .size-medium{
+		width: 200px;
+		height: 150px;
+	}
+
 	footer .contacto p{
 		font-size:11px;
 	}
 
 	#footerlogo img{
 		width:30%;
+	}
+}
+
+@media (max-width:450px){
+	#enlaces .col-sm-6{
+		padding: 0 5px;
+	}
+}
+
+@media (max-width:300px){
+	.carousel-indicators{
+		bottom: 1px;
+	}
+
+	.carousel-indicators li, .carousel-indicators .active{
+		height: 7px;
+		width: 7px;
+	}
+
+	#contenido h2{
+		font-size: 15px;
+	}
+
+	#contenido p{
+		font-size: 11px !important;
+	}
+
+	#enlaces .col-sm-6{
+		padding: 0;
+	}
+
+	.img_section{
+		padding: 5px 0;
+	}
+
+	.img_section h3{
+		margin: 0px;
+	}
+
+	#texto{
+		font-size: 11px;
+	}
+
+	#texto .alignnone{
+		width: 60px;
+		height: 60px;
+	}
+
+	#texto .size-medium{
+		width: 120px;
+		height: 90px;
+	}
+
+}
+
+@media (max-width:245px){
+	footer .f_section{
+		width: 30%;
+	}
+
+	footer .f_section h3{
+		font-size: 11px;
+	}
+
+	#texto .size-medium{
+		width: 150px;
+		height: 112.5px;
 	}
 }
