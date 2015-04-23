@@ -465,6 +465,55 @@ footer .f_section{
 	border-radius: 10px;
 }
 
+#contenido form{
+	background-color: #54C5F0;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+}
+
+#contenido form h2{
+	color: #B2E8FC;
+}
+
+#contenido form p{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#contenido #comentarios div{
+	border: 3px solid #7FD7F8;
+	margin: 2%;
+	border-radius: 30px;
+	background-color: #FFFFFF;
+}
+
+#contenido #comentarios{
+	background-color: #E3F4FB;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+#contenido #comentarios h3{
+	text-transform: capitalize;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2%;
+	color: #56caf4;
+}
+
+#contenido #comentarios p{
+	margin-left: 4%;
+	background-color: #fafafa;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	margin-right: 4%;
+}
+
+
 /* Símbolo elemento normal */
 .menujq ul li a:before {
 	content: "\25CF\00A0 ";
