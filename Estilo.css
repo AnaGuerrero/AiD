@@ -361,6 +361,24 @@ footer .f_section{
 	padding-top: 15px;
 }
 
+#contenido #cont_area #contacto{ 
+	background-color: #F2FCDE;
+	padding: 3%;
+	margin: 3%;
+	border-bottom-left-radius:30px ;
+	border-bottom-right-radius:30px;
+	border: 5px solid #B3E8FC;
+}
+
+#contenido #cont_area #contacto p{
+	color:#09A3DE;
+	font-weight: bold;
+}
+
+#contenido #cont_area h2{
+	padding-bottom: 1%;
+}
+
 #acercaDeNos p, #contenido p, #Contenido_event p{
 	color: #7e7f7f;
 	line-height: 180%;
