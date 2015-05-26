@@ -27,14 +27,43 @@ p{
 	background-color: #FFFFFF;
 }
 
-#pestana{
+header a{
+	text-align: right;
+}
+
+header .row{
 	background-color: #EC6A54;
 }
 
-#pestana a{
+header .col-sm-9{
+	text-align: right;
+	padding-top: 1%;
+}
+
+header a{
 	color: #FFFFFF;
 	font-weight: bold;
 	padding-left: 1%;
+	padding-right: 1%;
+	text-decoration: none;
+	border-radius: 10%;
+}
+
+header a:hover{
+	background-color: #ffffff;
+	color: #222527;
+	padding: 2%;
+	text-decoration: none;
+}
+
+header img{
+	width: 100%;
+}
+
+header #botonera{
+	position: fixed;
+	z-index: 1000;
+	position: static;
 }
 
 #section5{
@@ -157,10 +186,14 @@ p{
 }
 
 .footer-social .col-sm-2 img{
-	width: 30%;
+	width: 25%;
 	background-color: #7352ff;
 	border: 2px solid #7352ff;
 	border-radius: 100%;
+}
+
+.footer-social .col-sm-2 a{
+	padding-left: 2%;
 }
 
 .footer-social .col-sm-3{
